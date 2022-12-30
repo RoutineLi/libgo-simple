@@ -60,14 +60,14 @@ namespace Routn
 		gettimeofday(&tv, NULL);
 		return tv.tv_sec * 1000ul + tv.tv_usec / 1000;
 	}
-	
+
 	//获取高精度时间-us
 	uint64_t GetCurrentUs(){
 		struct timeval tv;
 		gettimeofday(&tv, NULL);
 		return tv.tv_sec * 1000 * 1000ul + tv.tv_usec;		
 	}
-
+	
 
 	std::string TimerToString(time_t ts, const std::string& format){
 		struct tm tm;

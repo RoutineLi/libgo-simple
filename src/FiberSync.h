@@ -32,12 +32,14 @@ namespace Routn{
 					_fiberId = Fiber::GetFiberId();
 					return ;
 				}
+			
 				auto self = Routn::Fiber::GetThis();
 				_waitQueue.push(self);
+				_fiberId = Fiber::GetFiberId();
 				_guard.unlock();
 				Fiber::YieldToHold();
 			}
-			_fiberId = Fiber::GetFiberId();
+
 		}
 		void unlock(){
 			_guard.lock();
