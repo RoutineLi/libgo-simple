@@ -1,0 +1,5 @@
+/home/rotun-li/libgo-simple/CMakeFiles/rebuild_cache.dir
+/home/rotun-li/libgo-simple/CMakeFiles/edit_cache.dir
+/home/rotun-li/libgo-simple/CMakeFiles/test_go_sync.dir
+/home/rotun-li/libgo-simple/CMakeFiles/test_go.dir
+/home/rotun-li/libgo-simple/CMakeFiles/routine.dir
